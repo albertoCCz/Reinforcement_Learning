@@ -7,7 +7,7 @@ In the stationary problem, we took
 
 ![Sample-average update rule](https://github.com/albertoCCz/Reinforcement_Learning/blob/main/10-armed%20Bandit%20Non-Stationary/Update_rule_st.png)
 
-as the update rule, where _n_ is the number of times an specific action was selected, _Q_ is the estimated action value and _R_ is the reward received. For the non-stationary problem we modify slightly this expression changing the factor_1/n_ by _alpha_, which can takes values between 0 and 1:
+as the update rule, where _n_ is the number of times an specific action was selected, _Q_ is the estimated action value and _R_ is the reward received. For the non-stationary problem we modify slightly this expression changing the factor _1/n_ by _alpha_, which can takes values between 0 and 1:
 
 ![Constant-size parameter update rule](https://github.com/albertoCCz/Reinforcement_Learning/blob/main/10-armed%20Bandit%20Non-Stationary/Update_rule_nst.png)
 
