@@ -4,9 +4,13 @@ The basics of this problem are the same that in the [stationary problem](https:/
 
 ## Exponential recency-weighted average (constant-size parameter) method
 In the stationary problem, we took
+
 ![Sample-average update rule](https://github.com/albertoCCz/Reinforcement_Learning/blob/main/10-armed%20Bandit%20Non-Stationary/Update_rule_st.png)
+
 as the update rule, where _n_ is the number of times an specific action was selected, _Q_ is the estimated action value and _R_ is the reward received. For the non-stationary problem we modify slightly this expression changing the factor_1/n_ by _alpha_, which can takes values between 0 and 1:
+
 ![Constant-size parameter update rule](https://github.com/albertoCCz/Reinforcement_Learning/blob/main/10-armed%20Bandit%20Non-Stationary/Update_rule_nst.png)
+
 Analyzing it, we can understand why the name "exponential recency-weighted": the weight given to each reward decreases as the number of intervening rewards increases. The fact that _alpha_ might be different from _1/n_ could cause convergence problems (for _alpha_=_1/n_ the convergence is guaranteed).
 
 ## Results
@@ -18,4 +22,5 @@ Let's compare both methods in a non-stationary problem. We use the parameters:
 - step = 0.1              # _alpha_
 
 We find that, although the sample-average method explore rapidly the action space and accumulates a bigger reward in the "early game", the constant-size parameter method perform better at the end of the experiments, meaning that it adapts better to a changing enviroment.
+
 ![Average Reward - 10-armed Bandit Non-stationary](https://github.com/albertoCCz/Reinforcement_Learning/blob/main/10-armed%20Bandit%20Non-Stationary/Average_Reward.png)
