@@ -1,6 +1,6 @@
 # 10-armed Bandit Problem with non-stationary optimal action values
 ## Introduction
-The basics of this problem are the same that in the [stationary problem](https://github.com/albertoCCz/Reinforcement_Learning/tree/main/10-armed%20Bandit) we saw previosly. The difference is that now the optimal action values change in time, with each interaction really. Thus, we are going to study a new method to estimate the action values and then we'll compare it with the sample-average method we used in the stationary case.
+The basics of this problem are the same that in the [stationary problem](https://github.com/albertoCCz/Reinforcement_Learning/tree/main/10-armed%20Bandit) we saw previously. The difference is that now the optimal action values change in time, with each interaction really. Thus, we are going to study a new method to estimate the action values and then we'll compare it with the sample-average method we used in the stationary case.
 
 ## Exponential recency-weighted average (constant-size parameter) method
 In the stationary problem, we took
